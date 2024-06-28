@@ -859,6 +859,84 @@ section,
   padding: 20px 20px;
 }
 
+/* scolling trade market start */
+.span-full-grid,
+			#symbol-info,
+			#advanced-chart,
+			#company-profile,
+			#fundamental-data {
+				grid-column: span 2;
+			}
+
+			.span-one-column,
+			#technical-analysis,
+			#top-stories,
+			#powered-by-tv {
+				grid-column: span 1;
+			}
+
+			.skeleton,
+			#company-profile,
+			#fundamental-data,
+			#technical-analysis,
+			#top-stories {
+				text-align: center;
+				padding: 16px;
+				font-size: 24px;
+				background: rgba(0, 0, 0, 0.075);
+				border-radius: 4px;
+			}
+
+			#ticker-tape {
+				width: 100%;
+				margin-bottom: var(--gap-size);
+			}
+
+			#advanced-chart {
+				height: 500px;
+			}
+
+			#company-profile {
+				height:390px;
+			}
+
+			#fundamental-data {
+				height: 490px;
+			}
+
+			#technical-analysis,
+			#top-stories {
+				height: 425px;
+			}
+
+			#powered-by-tv {
+				display: flex;
+				background: #f8f9fd;
+				border: solid 1px #e0e3eb;
+				text-align: justify;
+				flex-direction: column;
+				gap: 8px;
+				font-size: 14px;
+				padding: 16px;
+				border-radius: 6px;
+			}
+
+			#powered-by-tv a, #powered-by-tv a:visited {
+				color: #2962ff;
+			}
+
+			@media (max-width: 800px) {
+				main > section,
+				.span-full-grid,
+				#technical-analysis,
+				#top-stories,
+				#powered-by-tv {
+					grid-column: span 2;
+				}
+			}
+/* scolling trade market end */
+
+
 
 /*--------------------------------------------------------------
 # About Section

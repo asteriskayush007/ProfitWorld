@@ -94,6 +94,7 @@ style="
 
     </div>
   </header>
+  
 
   <main class="main">
 
@@ -117,6 +118,76 @@ style="
       </div>
 
     </section><!-- /Hero Section -->
+    <nav id="ticker-tape">
+			<!-- TradingView Widget BEGIN -->
+			<div class="tradingview-widget-container">
+				<div class="tradingview-widget-container__widget"></div>
+				<script
+					type="text/javascript"
+					src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+					async
+				>
+					{
+					"symbols": [
+					  {
+						"description": "",
+						"proName": "NASDAQ:TSLA"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:AAPL"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:NVDA"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:MSFT"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:AMZN"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:GOOGL"
+					  },
+					  {
+						"description": "",
+						"proName": "NASDAQ:META"
+					  },
+					  {
+						"description": "",
+						"proName": "NYSE:BRK.B"
+					  },
+					  {
+						"description": "",
+						"proName": "NYSE:LLY"
+					  },
+					  {
+						"description": "",
+						"proName": "NYSE:UNH"
+					  },
+					  {
+						"description": "",
+						"proName": "NYSE:V"
+					  },
+					  {
+						"description": "",
+						"proName": "NYSE:WMT"
+					  }
+					],
+					"showSymbolLogo": true,
+					"colorTheme": "light",
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"locale": "en"
+					 }
+				</script>
+			</div>
+			<!-- TradingView Widget END -->
+		</nav>
 
     <!-- About Section -->
     <section id="about" class="section about">
@@ -172,13 +243,15 @@ style="
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
-  "symbol": "INDEX:BTCUSD",
+  "symbol": "BSE:SENSEX",
   "interval": "D",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
   "locale": "en",
+  "withdateranges": true,
   "allow_symbol_change": true,
+  "details": true,
   "calendar": false,
   "support_host": "https://www.tradingview.com"
 }
@@ -204,10 +277,10 @@ style="
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-app">Trading</li>
+            <li data-filter=".filter-product">Forex</li>
+            <li data-filter=".filter-branding">Sunsex</li>
+            <li data-filter=".filter-books">Stocks</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -631,8 +704,6 @@ style="
             <span class="sitename">Ninestars</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
